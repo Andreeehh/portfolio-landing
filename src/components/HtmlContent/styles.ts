@@ -24,37 +24,12 @@ export const Container = styled.div`
       filter: brightness(50%)
     }
 
-    /* code  {
-      font-family: monospace;
-      color: ${theme.colors.secondary};
-      font-size: ${theme.font.sizes.small};
-      background: ${theme.colors.mediumGray};
-      padding: 0.2rem;
-      margin: 0.2rem;
-    }
-
-    pre {
-      background: ${theme.colors.primary};
-      padding: ${theme.spacings.medium};
-      font-family: monospace;
-      color: ${theme.colors.white};
-      margin: ${theme.spacings.medium} 0;
-      width: 100%;
-      overflow-x: auto;
-      font-size: ${theme.font.sizes.small};
-    }
-
-    pre code {
-      color: inherit;
-      background: inherit;
-    } */
-
     img {
       max-width: 100%;
     }
 
     .image  {
-      background: ${theme.colors.darkerGray};
+      background: ${theme.colors.mediumGray};
       line-height: 0;
       margin: ${theme.spacings.medium} 0;
     }
@@ -100,8 +75,8 @@ export const Container = styled.div`
     }
 
     blockquote {
-      border-left: 0.5rem solid ${theme.colors.secondary};
-      color: ${theme.colors.darkerGray};
+      border-left: 0.5rem solid ${theme.colors.secondaryColor};
+      color: ${theme.colors.mediumGray};
       filter: brightness(80%);
       padding-left: ${theme.spacings.medium};
       font-style: italic;
