@@ -30,7 +30,11 @@ function Home({ data }: HomeProps) {
     // <>
     //   <h1>Oi</h1>
     // </>
-    <Base links={menu_links} footerHtml={footer_text} logoData={{ text: logo_text, link: logo_link, srcImg }}>
+    <Base
+      links={menu_links}
+      footerHtml={footer_text}
+      logoData={{ text: logo_text, link: logo_link.toLowerCase(), srcImg }}
+    >
       <Head>
         <title>
           {title} | {config.siteName}

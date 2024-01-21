@@ -12,7 +12,7 @@ export const loadPages = async (variables: LoadPagesVariables = {}): Promise<Pag
     const data = (await request(config.graphqlUrl, GRAPHQL_QUERIES, { ...variables })) as PagesStrapi;
     return data;
   } catch (error) {
-    console.error('Erro na requisição GraphQL:', error);
-    throw error; // Rejoga o erro para que quem chama a função também possa tratá-lo
+    console.log(error);
+    return error;
   }
 };
