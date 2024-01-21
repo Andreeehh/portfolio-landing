@@ -42,7 +42,7 @@ export const getStaticProps = async (ctx) => {
 
   return {
     props: {
-      data,
+      data: data.pages.data[0].attributes,
     },
     revalidate: 30,
   };
