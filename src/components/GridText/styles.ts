@@ -10,13 +10,26 @@ export const Container = styled.div`
   `}
 `;
 
+export const Carousel = styled.div`
+  ${({ theme }) => css`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: ${theme.spacings.xhuge};
+  `}
+`;
+
 export const Grid = styled.div``;
 
 export const GridElement = styled.div`
-  ${() => css`
+  ${({ theme }) => css`
     ${HeadingContainer} {
       position: relative;
-      left: 5rem;
+      left: 2rem;
+      @media ${theme.media.lteMedium} {
+        left: 0rem;
+      }
     }
   `}
 `;

@@ -92,6 +92,15 @@ export const GRAPHQL_FRAGMENTS = gql`
   fragment textGrid on ComponentSectionTextGrid {
     title
     description
+    cover {
+      data {
+        id
+        attributes {
+          url
+          alternativeText
+        }
+      }
+    }
   }
 
   fragment page on Page {

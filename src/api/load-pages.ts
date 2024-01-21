@@ -12,7 +12,7 @@ export const loadPages = async (variables: LoadPagesVariables = {}): Promise<Pag
     const data = (await request(config.graphqlUrl, GRAPHQL_QUERIES, { ...variables })) as PagesStrapi;
     return data;
   } catch (error) {
-    console.log(error);
+    console.log('Error graphql', error);
     return error;
   }
 };

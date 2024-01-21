@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.div`
   ${({ theme }) => css`
+    margin-bottom: ${theme.spacings.medium};
     iframe[src*='ads'] {
       display: none;
     }
@@ -15,26 +16,27 @@ export const Container = styled.div`
     a,
     a:visited,
     a:link {
-      color: &{theme.colors.secondary};
-      text-decoration:none;
+      color: ${theme.colors.secondaryColor};
+      text-decoration: none;
+      font-size: calc(${theme.font.sizes.large} + 0.2rem);
       transition: all 300ms ease-in-out;
     }
 
     a:hover {
-      filter: brightness(50%)
+      filter: brightness(50%);
     }
 
     img {
       max-width: 100%;
     }
 
-    .image  {
+    .image {
       background: ${theme.colors.mediumGray};
       line-height: 0;
       margin: ${theme.spacings.medium} 0;
     }
 
-    .image figcaption  {
+    .image figcaption {
       font-size: ${theme.font.sizes.small};
       padding: ${theme.spacings.small};
       text-align: center;
@@ -46,17 +48,17 @@ export const Container = styled.div`
       margin: ${theme.spacings.medium};
     }
 
-    hr  {
+    hr {
       border: none;
       border-bottom: 0.1rem solid ${theme.colors.mediumGray};
     }
 
     ul,
-    ol  {
+    ol {
       margin: ${theme.spacings.medium} ${theme.spacings.xlarge};
     }
 
-    .table  {
+    .table {
       width: 100%;
       overflow: hidden;
       overflow-x: auto;
@@ -69,7 +71,7 @@ export const Container = styled.div`
     }
 
     table td,
-    table th  {
+    table th {
       padding: ${theme.spacings.small};
       border: 0.1rem solid ${theme.colors.mediumGray};
     }
@@ -87,10 +89,10 @@ export const Container = styled.div`
       font-size: 2rem;
 
       .image-style-side {
-      float: none;
-      max-width: 100%;
-      margin: 0;
-    }
+        float: none;
+        max-width: 100%;
+        margin: 0;
+      }
     }
   `}
 `;

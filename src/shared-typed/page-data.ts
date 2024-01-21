@@ -1,3 +1,5 @@
+import { StrapiImages } from './strapi-images';
+
 export type LogoLinkProps = {
   id: string;
   logo: {
@@ -40,6 +42,7 @@ export type SectionMetadataProps = {
 export type TextGridElementProps = {
   title: string;
   description: string;
+  cover: StrapiImages;
 };
 
 export type PageData = {
