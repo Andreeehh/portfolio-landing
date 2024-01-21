@@ -10,11 +10,7 @@ export const Container = styled.div`
   `}
 `;
 
-export const Grid = styled.div`
-  ${({ theme }) => css`
-    counter-reset: grid-counter;
-  `}
-`;
+export const Grid = styled.div``;
 
 export const GridElement = styled.div`
   ${() => css`
