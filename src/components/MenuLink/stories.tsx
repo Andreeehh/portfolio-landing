@@ -1,5 +1,6 @@
 import { Meta, Story } from '@storybook/react';
-import { MenuLink, MenuLinkProps } from '.';
+import { MenuLink } from '.';
+import { MenuLinkProps } from '../../shared-typed/page-data';
 
 export default {
   title: 'MenuLink',
