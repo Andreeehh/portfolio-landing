@@ -8,6 +8,12 @@ export const Container = styled.a`
     padding: ${theme.spacings.small};
     color: ${theme.colors.primaryColor};
     position: relative;
+    transition: all 800ms ease-in-out;
+    &:hover {
+      background: ${theme.colors.primaryColor};
+      color: ${theme.colors.white};
+      box-shadow: inset 0 0 5px 0 ${theme.colors.white};
+    }
     &::after {
       content: '';
       position: absolute;
